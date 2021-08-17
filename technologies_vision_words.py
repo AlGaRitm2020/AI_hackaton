@@ -82,6 +82,6 @@ def img_size(img):
     return (width, height)
 
 
-func_for_vision_words_with_coord('source/aah97e00-page02_1.tif')
-
-print(img_size('source/aah97e00-page02_1.tif'))
+# func_for_vision_words_with_coord('source/aah97e00-page02_1.tif')
+#
+# print(img_size('source/aah97e00-page02_1.tif'))

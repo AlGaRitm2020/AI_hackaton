@@ -1,19 +1,24 @@
 import os
-from flask import Flask, request
+from flask import Flask, request, render_template
 
 UPLOAD_FOLDER = './upload'
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+
+def render_templatete(param):
+    pass
+
+
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
-        if 'file1' not in request.files:
+        if 'img' not in request.files:
             return 'there is no file1 in form!'
-        file1 = request.files['file1']
-        path = os.path.join(app.config['UPLOAD_FOLDER'], file1.filename)
-        file1.save(path)
+        img = request.files['img']
+        path = os.path.join(app.config['UPLOAD_FOLDER'], img.filename)
+        img.save(path)
 
         text = 'get from function by snchs'
         dict = {'text': text}
@@ -22,13 +27,7 @@ def upload_file():
         # with open('text.json', 'w') as f:
         #     json.dump(dict, f)
         return dict, 201
-    return '''
-    <h1>Task 1. </h1>
-    <form method="post" enctype="multipart/form-data">
-      <input type="file" name="file1">
-      <input type="submit">
-    </form>
-    '''
+    return render_template('upload.html')
 
 if __name__ == '__main__':
     app.run()

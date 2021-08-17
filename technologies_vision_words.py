@@ -44,4 +44,4 @@ def func_for_vision_words_with_coord(img):
         json.dump(dict, f)
 
 
-func_for_vision_words_with_coord('source/aah97e00-page02_1.tif')
+func_for_vision_words_with_coord('aah97e00-page02_1.tif')

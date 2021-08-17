@@ -1,18 +1,18 @@
 import spacy
 
-texty = 'Еду в Санкт-Петербург Яндекс через Москву, Алексей 12 августа года Ижевску ООО "Яндекс" 10000$ Кононов Никита Владимирович мама папа Китай Пекин МТС и директор Абу-Даби Хельсинки'
+texty = 'Еду в Санкт-Петербург Яндекс через 1892г 2010г. 1900 г Москву, 1004678765 рублей 13.05.2003 Алексей 12 августа года Ижевску ООО "Яндекс" 10000$ 1734г Кононов Никита Владимирович мама папа Китай Пекин МТС и директор Абу-Даби Хельсинки'
 nlp = spacy.load("ru_core_news_sm")
 doc = nlp(texty)
 print(doc.text)
 for ent in doc.ents:
     if ent.label_ == 'ORG':
-        print(ent.text, ': ORGANIZATION', sep='')
+        print(ent.text, ': ORGANIZATION')
     if ent.label_ == 'LOC':
-        print(ent.text, ': LOCATION', sep='')
+        print(ent.text, ': LOCATION')
     if ent.label_ == 'PER':
-        print(ent.text, ': PERSON', sep='')
+        print(ent.text, ': PERSON')
 
-ch = []
+ch = ['01', '02', '03', '04', '05', '06', '07', '08', '09']
 for i in range(1, 32):
     ch.append(i)
 
@@ -32,5 +32,28 @@ for i in range(len(texty.split())):
         else:
             print(texty.split()[i], ': DATE')
 for i in range(len(texty.split())):
-    if i in ch:
-        pass
+    if texty.split()[i] in ch:
+        if texty.split()[i + 1] in ['г.', 'год', 'года', 'году', 'г', 'год.', 'года.', 'году.']:
+            print(texty.split()[i], texty.split()[i + 1], ': DATE',)
+for i in range(len(texty.split())):
+    if str(texty.split()[i][:-1:]) in ch:
+        if texty.split()[i][-1] == 'г':
+            print(texty.split()[i], ': DATE')
+    if str(texty.split()[i][:-2:]) in ch:
+        if texty.split()[i][-2::] == 'г.':
+            print(texty.split()[i], ': DATE')
+for i in range(len(texty.split())):
+    if texty.split()[i].count('.') == 3:
+        if str(texty.split()[i][-1]) == '.':
+            texty.split()[i] = texty.split()[i][:-1:]
+    if texty.split()[i].count('.') == 2:
+        if str(texty.split()[i][-1]) == 'г':
+            texty.split()[i] = texty.split()[i][:-1:]
+        if str(texty.split()[i].split('.')[0]) in ch and str(texty.split()[i].split('.')[1]) in ch and str(texty.split()[i].split('.')[2]) in ch:
+            print(texty.split()[i], ': DATE')
+
+tex = 'ajkf алтукт олкалйукаодука уйка лткалудлатутаук 23647324677 рублей каорокоароыраориолыоаиоыэ'
+for i in range(len(tex.split())):
+    if type(tex.split()[i]) == int:
+        if str(tex.split()[i + 1]) in ['рублей', 'руб.', 'руб', 'рублей.', 'долларов', '$', 'р.', 'р', 'евро', 'евро.']:
+            print(tex.split()[i], tex.split()[i + 1], ': MONEY')

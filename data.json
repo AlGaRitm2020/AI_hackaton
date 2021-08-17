@@ -1,0 +1,1535 @@
+{
+  "text": "PHILIP MORRIS\n\nEUROPE MIDDLE EAST AFRICA\n\nRESEARCH AND DEVELOPMENT\n\nNeuchatel, July 14, 1977 ~\n\nDr. M.A. Manzelli,\nPHILIP MORRIS INC.,\nResearch Center,\n\nP.O. Box 3 D\nRichmond, Va. 23206\nU.S.A.\nDear Art,\n\nPlease find enclosed a proposed program for your visit in\nEurope. As you will see, this program contains two major\npoints:\n\na) A two-days meeting in Neuchatel with all people in\nEurope involved in infestation control (proposed\nprogram included).\n\nb) Visit of all PM Europe production centers with the\n\npurpose of:\n\n- training people in charge of the insect indenti-\nfication\n\n= inspection of the sanitary conditions\n\nOne of our main problems is the insect identification and\nit would be very helpful if you provided us with detailed\npictures or drawings of the most common insects.\n\nI leave it up to you! to organize your travel from the\nStates to Europe and backwards. We may organize your\ntravel in Europe.\n\nPZ9SEO000T",
+  "tokens": [
+    {
+      "text": "PHILIP",
+      "position": {
+        "left": "932",
+        "top": "307",
+        "width": "296",
+        "height": "85"
+      },
+      "offset": null
+    },
+    {
+      "text": "MORRIS",
+      "position": {
+        "left": "1252",
+        "top": "248",
+        "width": "326",
+        "height": "138"
+      },
+      "offset": null
+    },
+    {
+      "text": "EUROPE",
+      "position": {
+        "left": "955",
+        "top": "423",
+        "width": "159",
+        "height": "30"
+      },
+      "offset": null
+    },
+    {
+      "text": "MIDDLE",
+      "position": {
+        "left": "1146",
+        "top": "422",
+        "width": "147",
+        "height": "26"
+      },
+      "offset": null
+    },
+    {
+      "text": "EAST",
+      "position": {
+        "left": "1314",
+        "top": "419",
+        "width": "91",
+        "height": "27"
+      },
+      "offset": null
+    },
+    {
+      "text": "AFRICA",
+      "position": {
+        "left": "1433",
+        "top": "416",
+        "width": "143",
+        "height": "28"
+      },
+      "offset": null
+    },
+    {
+      "text": "RESEARCH",
+      "position": {
+        "left": "958",
+        "top": "517",
+        "width": "214",
+        "height": "30"
+      },
+      "offset": null
+    },
+    {
+      "text": "AND",
+      "position": {
+        "left": "1196",
+        "top": "516",
+        "width": "74",
+        "height": "25"
+      },
+      "offset": null
+    },
+    {
+      "text": "DEVELOPMENT",
+      "position": {
+        "left": "1295",
+        "top": "509",
+        "width": "283",
+        "height": "31"
+      },
+      "offset": null
+    },
+    {
+      "text": "Neuchatel,",
+      "position": {
+        "left": "1473",
+        "top": "752",
+        "width": "250",
+        "height": "43"
+      },
+      "offset": null
+    },
+    {
+      "text": "July",
+      "position": {
+        "left": "1750",
+        "top": "749",
+        "width": "100",
+        "height": "46"
+      },
+      "offset": null
+    },
+    {
+      "text": "14,",
+      "position": {
+        "left": "1882",
+        "top": "747",
+        "width": "69",
+        "height": "42"
+      },
+      "offset": null
+    },
+    {
+      "text": "1977",
+      "position": {
+        "left": "1980",
+        "top": "744",
+        "width": "97",
+        "height": "39"
+      },
+      "offset": null
+    },
+    {
+      "text": "~",
+      "position": {
+        "left": "2128",
+        "top": "781",
+        "width": "4",
+        "height": "2"
+      },
+      "offset": null
+    },
+    {
+      "text": "Dr.",
+      "position": {
+        "left": "670",
+        "top": "1042",
+        "width": "65",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "M.A.",
+      "position": {
+        "left": "769",
+        "top": "1039",
+        "width": "93",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "Manzelli,",
+      "position": {
+        "left": "898",
+        "top": "1033",
+        "width": "223",
+        "height": "42"
+      },
+      "offset": null
+    },
+    {
+      "text": "PHILIP",
+      "position": {
+        "left": "671",
+        "top": "1094",
+        "width": "148",
+        "height": "40"
+      },
+      "offset": null
+    },
+    {
+      "text": "MORRIS",
+      "position": {
+        "left": "847",
+        "top": "1092",
+        "width": "150",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "INC.,",
+      "position": {
+        "left": "1030",
+        "top": "1089",
+        "width": "119",
+        "height": "40"
+      },
+      "offset": null
+    },
+    {
+      "text": "Research",
+      "position": {
+        "left": "673",
+        "top": "1147",
+        "width": "198",
+        "height": "41"
+      },
+      "offset": null
+    },
+    {
+      "text": "Center,",
+      "position": {
+        "left": "902",
+        "top": "1146",
+        "width": "171",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "P.O.",
+      "position": {
+        "left": "675",
+        "top": "1205",
+        "width": "91",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "Box",
+      "position": {
+        "left": "802",
+        "top": "1203",
+        "width": "72",
+        "height": "35"
+      },
+      "offset": null
+    },
+    {
+      "text": "3",
+      "position": {
+        "left": "904",
+        "top": "1201",
+        "width": "21",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "D",
+      "position": {
+        "left": "955",
+        "top": "1200",
+        "width": "22",
+        "height": "35"
+      },
+      "offset": null
+    },
+    {
+      "text": "Richmond,",
+      "position": {
+        "left": "675",
+        "top": "1254",
+        "width": "322",
+        "height": "43"
+      },
+      "offset": null
+    },
+    {
+      "text": "Va.",
+      "position": {
+        "left": "927",
+        "top": "1245",
+        "width": "80",
+        "height": "56"
+      },
+      "offset": null
+    },
+    {
+      "text": "23206",
+      "position": {
+        "left": "1033",
+        "top": "1249",
+        "width": "122",
+        "height": "39"
+      },
+      "offset": null
+    },
+    {
+      "text": "U.S.A.",
+      "position": {
+        "left": "677",
+        "top": "1311",
+        "width": "142",
+        "height": "39"
+      },
+      "offset": null
+    },
+    {
+      "text": "Dear",
+      "position": {
+        "left": "684",
+        "top": "1530",
+        "width": "97",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "Art,",
+      "position": {
+        "left": "811",
+        "top": "1527",
+        "width": "96",
+        "height": "40"
+      },
+      "offset": null
+    },
+    {
+      "text": "Please",
+      "position": {
+        "left": "689",
+        "top": "1675",
+        "width": "149",
+        "height": "55"
+      },
+      "offset": null
+    },
+    {
+      "text": "find",
+      "position": {
+        "left": "866",
+        "top": "1686",
+        "width": "98",
+        "height": "40"
+      },
+      "offset": null
+    },
+    {
+      "text": "enclosed",
+      "position": {
+        "left": "996",
+        "top": "1679",
+        "width": "196",
+        "height": "43"
+      },
+      "offset": null
+    },
+    {
+      "text": "a",
+      "position": {
+        "left": "1225",
+        "top": "1688",
+        "width": "20",
+        "height": "29"
+      },
+      "offset": null
+    },
+    {
+      "text": "proposed",
+      "position": {
+        "left": "1273",
+        "top": "1672",
+        "width": "198",
+        "height": "52"
+      },
+      "offset": null
+    },
+    {
+      "text": "program",
+      "position": {
+        "left": "1502",
+        "top": "1677",
+        "width": "173",
+        "height": "41"
+      },
+      "offset": null
+    },
+    {
+      "text": "for",
+      "position": {
+        "left": "1703",
+        "top": "1667",
+        "width": "71",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "your",
+      "position": {
+        "left": "1800",
+        "top": "1672",
+        "width": "102",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "visit",
+      "position": {
+        "left": "1930",
+        "top": "1658",
+        "width": "126",
+        "height": "41"
+      },
+      "offset": null
+    },
+    {
+      "text": "in",
+      "position": {
+        "left": "2085",
+        "top": "1657",
+        "width": "46",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "Europe.",
+      "position": {
+        "left": "692",
+        "top": "1746",
+        "width": "166",
+        "height": "44"
+      },
+      "offset": null
+    },
+    {
+      "text": "As",
+      "position": {
+        "left": "919",
+        "top": "1740",
+        "width": "46",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "you",
+      "position": {
+        "left": "992",
+        "top": "1747",
+        "width": "75",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "will",
+      "position": {
+        "left": "1094",
+        "top": "1733",
+        "width": "95",
+        "height": "40"
+      },
+      "offset": null
+    },
+    {
+      "text": "see,",
+      "position": {
+        "left": "1225",
+        "top": "1740",
+        "width": "95",
+        "height": "32"
+      },
+      "offset": null
+    },
+    {
+      "text": "this",
+      "position": {
+        "left": "1351",
+        "top": "1727",
+        "width": "93",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "program",
+      "position": {
+        "left": "1477",
+        "top": "1731",
+        "width": "175",
+        "height": "41"
+      },
+      "offset": null
+    },
+    {
+      "text": "contains",
+      "position": {
+        "left": "1681",
+        "top": "1718",
+        "width": "195",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "two",
+      "position": {
+        "left": "1908",
+        "top": "1717",
+        "width": "70",
+        "height": "35"
+      },
+      "offset": null
+    },
+    {
+      "text": "major",
+      "position": {
+        "left": "2007",
+        "top": "1710",
+        "width": "126",
+        "height": "44"
+      },
+      "offset": null
+    },
+    {
+      "text": "points:",
+      "position": {
+        "left": "693",
+        "top": "1799",
+        "width": "167",
+        "height": "47"
+      },
+      "offset": null
+    },
+    {
+      "text": "a)",
+      "position": {
+        "left": "697",
+        "top": "1906",
+        "width": "42",
+        "height": "47"
+      },
+      "offset": null
+    },
+    {
+      "text": "A",
+      "position": {
+        "left": "847",
+        "top": "1904",
+        "width": "25",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "two-days",
+      "position": {
+        "left": "901",
+        "top": "1898",
+        "width": "195",
+        "height": "45"
+      },
+      "offset": null
+    },
+    {
+      "text": "meeting",
+      "position": {
+        "left": "1125",
+        "top": "1892",
+        "width": "174",
+        "height": "43"
+      },
+      "offset": null
+    },
+    {
+      "text": "in",
+      "position": {
+        "left": "1332",
+        "top": "1889",
+        "width": "51",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "Neuchatel",
+      "position": {
+        "left": "1405",
+        "top": "1881",
+        "width": "219",
+        "height": "41"
+      },
+      "offset": null
+    },
+    {
+      "text": "with",
+      "position": {
+        "left": "1656",
+        "top": "1880",
+        "width": "97",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "all",
+      "position": {
+        "left": "1786",
+        "top": "1877",
+        "width": "66",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "people",
+      "position": {
+        "left": "1888",
+        "top": "1854",
+        "width": "148",
+        "height": "67"
+      },
+      "offset": null
+    },
+    {
+      "text": "in",
+      "position": {
+        "left": "2066",
+        "top": "1871",
+        "width": "45",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "Europe",
+      "position": {
+        "left": "850",
+        "top": "1956",
+        "width": "149",
+        "height": "43"
+      },
+      "offset": null
+    },
+    {
+      "text": "involved",
+      "position": {
+        "left": "1030",
+        "top": "1946",
+        "width": "196",
+        "height": "42"
+      },
+      "offset": null
+    },
+    {
+      "text": "in",
+      "position": {
+        "left": "1258",
+        "top": "1944",
+        "width": "45",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "infestation",
+      "position": {
+        "left": "1333",
+        "top": "1938",
+        "width": "273",
+        "height": "41"
+      },
+      "offset": null
+    },
+    {
+      "text": "control",
+      "position": {
+        "left": "1638",
+        "top": "1931",
+        "width": "163",
+        "height": "39"
+      },
+      "offset": null
+    },
+    {
+      "text": "(proposed",
+      "position": {
+        "left": "1844",
+        "top": "1925",
+        "width": "218",
+        "height": "53"
+      },
+      "offset": null
+    },
+    {
+      "text": "program",
+      "position": {
+        "left": "852",
+        "top": "2014",
+        "width": "175",
+        "height": "40"
+      },
+      "offset": null
+    },
+    {
+      "text": "included).",
+      "position": {
+        "left": "1056",
+        "top": "1996",
+        "width": "242",
+        "height": "47"
+      },
+      "offset": null
+    },
+    {
+      "text": "b)",
+      "position": {
+        "left": "703",
+        "top": "2116",
+        "width": "44",
+        "height": "48"
+      },
+      "offset": null
+    },
+    {
+      "text": "Visit",
+      "position": {
+        "left": "849",
+        "top": "2113",
+        "width": "130",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "of",
+      "position": {
+        "left": "1007",
+        "top": "2110",
+        "width": "48",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "all",
+      "position": {
+        "left": "1085",
+        "top": "2106",
+        "width": "64",
+        "height": "39"
+      },
+      "offset": null
+    },
+    {
+      "text": "PM",
+      "position": {
+        "left": "1186",
+        "top": "2105",
+        "width": "46",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "Europe",
+      "position": {
+        "left": "1238",
+        "top": "2102",
+        "width": "170",
+        "height": "43"
+      },
+      "offset": null
+    },
+    {
+      "text": "production",
+      "position": {
+        "left": "1438",
+        "top": "2094",
+        "width": "249",
+        "height": "49"
+      },
+      "offset": null
+    },
+    {
+      "text": "centers",
+      "position": {
+        "left": "1717",
+        "top": "2093",
+        "width": "171",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "with",
+      "position": {
+        "left": "1915",
+        "top": "2086",
+        "width": "98",
+        "height": "40"
+      },
+      "offset": null
+    },
+    {
+      "text": "the",
+      "position": {
+        "left": "2040",
+        "top": "2084",
+        "width": "78",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "purpose",
+      "position": {
+        "left": "856",
+        "top": "2174",
+        "width": "174",
+        "height": "39"
+      },
+      "offset": null
+    },
+    {
+      "text": "of:",
+      "position": {
+        "left": "1060",
+        "top": "2161",
+        "width": "65",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "-",
+      "position": {
+        "left": "861",
+        "top": "2289",
+        "width": "19",
+        "height": "8"
+      },
+      "offset": null
+    },
+    {
+      "text": "training",
+      "position": {
+        "left": "936",
+        "top": "2268",
+        "width": "197",
+        "height": "44"
+      },
+      "offset": null
+    },
+    {
+      "text": "people",
+      "position": {
+        "left": "1165",
+        "top": "2261",
+        "width": "147",
+        "height": "50"
+      },
+      "offset": null
+    },
+    {
+      "text": "in",
+      "position": {
+        "left": "1343",
+        "top": "2260",
+        "width": "44",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "charge",
+      "position": {
+        "left": "1419",
+        "top": "2257",
+        "width": "145",
+        "height": "44"
+      },
+      "offset": null
+    },
+    {
+      "text": "of",
+      "position": {
+        "left": "1594",
+        "top": "2254",
+        "width": "48",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "the",
+      "position": {
+        "left": "1672",
+        "top": "2252",
+        "width": "69",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "insect",
+      "position": {
+        "left": "1771",
+        "top": "2251",
+        "width": "150",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "indenti-",
+      "position": {
+        "left": "1951",
+        "top": "2245",
+        "width": "195",
+        "height": "41"
+      },
+      "offset": null
+    },
+    {
+      "text": "fication",
+      "position": {
+        "left": "936",
+        "top": "2322",
+        "width": "200",
+        "height": "39"
+      },
+      "offset": null
+    },
+    {
+      "text": "=",
+      "position": {
+        "left": "849",
+        "top": "2445",
+        "width": "34",
+        "height": "29"
+      },
+      "offset": null
+    },
+    {
+      "text": "inspection",
+      "position": {
+        "left": "943",
+        "top": "2424",
+        "width": "247",
+        "height": "45"
+      },
+      "offset": null
+    },
+    {
+      "text": "of",
+      "position": {
+        "left": "1220",
+        "top": "2419",
+        "width": "47",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "the",
+      "position": {
+        "left": "1297",
+        "top": "2417",
+        "width": "70",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "sanitary",
+      "position": {
+        "left": "1396",
+        "top": "2415",
+        "width": "198",
+        "height": "42"
+      },
+      "offset": null
+    },
+    {
+      "text": "conditions",
+      "position": {
+        "left": "1625",
+        "top": "2411",
+        "width": "248",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "One",
+      "position": {
+        "left": "714",
+        "top": "2539",
+        "width": "74",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "of",
+      "position": {
+        "left": "817",
+        "top": "2536",
+        "width": "47",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "our",
+      "position": {
+        "left": "893",
+        "top": "2543",
+        "width": "74",
+        "height": "28"
+      },
+      "offset": null
+    },
+    {
+      "text": "main",
+      "position": {
+        "left": "994",
+        "top": "2527",
+        "width": "99",
+        "height": "42"
+      },
+      "offset": null
+    },
+    {
+      "text": "problems",
+      "position": {
+        "left": "1123",
+        "top": "2527",
+        "width": "195",
+        "height": "48"
+      },
+      "offset": null
+    },
+    {
+      "text": "is",
+      "position": {
+        "left": "1351",
+        "top": "2525",
+        "width": "42",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "the",
+      "position": {
+        "left": "1425",
+        "top": "2524",
+        "width": "71",
+        "height": "35"
+      },
+      "offset": null
+    },
+    {
+      "text": "insect",
+      "position": {
+        "left": "1528",
+        "top": "2522",
+        "width": "147",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "identification",
+      "position": {
+        "left": "1705",
+        "top": "2514",
+        "width": "351",
+        "height": "41"
+      },
+      "offset": null
+    },
+    {
+      "text": "and",
+      "position": {
+        "left": "2086",
+        "top": "2491",
+        "width": "71",
+        "height": "55"
+      },
+      "offset": null
+    },
+    {
+      "text": "it",
+      "position": {
+        "left": "719",
+        "top": "2595",
+        "width": "48",
+        "height": "52"
+      },
+      "offset": null
+    },
+    {
+      "text": "would",
+      "position": {
+        "left": "791",
+        "top": "2589",
+        "width": "125",
+        "height": "40"
+      },
+      "offset": null
+    },
+    {
+      "text": "be",
+      "position": {
+        "left": "946",
+        "top": "2588",
+        "width": "47",
+        "height": "35"
+      },
+      "offset": null
+    },
+    {
+      "text": "very",
+      "position": {
+        "left": "1021",
+        "top": "2594",
+        "width": "97",
+        "height": "34"
+      },
+      "offset": null
+    },
+    {
+      "text": "helpful",
+      "position": {
+        "left": "1149",
+        "top": "2578",
+        "width": "166",
+        "height": "47"
+      },
+      "offset": null
+    },
+    {
+      "text": "if",
+      "position": {
+        "left": "1353",
+        "top": "2579",
+        "width": "45",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "you",
+      "position": {
+        "left": "1423",
+        "top": "2587",
+        "width": "74",
+        "height": "35"
+      },
+      "offset": null
+    },
+    {
+      "text": "provided",
+      "position": {
+        "left": "1528",
+        "top": "2574",
+        "width": "198",
+        "height": "47"
+      },
+      "offset": null
+    },
+    {
+      "text": "us",
+      "position": {
+        "left": "1754",
+        "top": "2583",
+        "width": "46",
+        "height": "27"
+      },
+      "offset": null
+    },
+    {
+      "text": "with",
+      "position": {
+        "left": "1830",
+        "top": "2569",
+        "width": "97",
+        "height": "39"
+      },
+      "offset": null
+    },
+    {
+      "text": "detailed",
+      "position": {
+        "left": "1957",
+        "top": "2562",
+        "width": "201",
+        "height": "41"
+      },
+      "offset": null
+    },
+    {
+      "text": "pictures",
+      "position": {
+        "left": "719",
+        "top": "2647",
+        "width": "197",
+        "height": "45"
+      },
+      "offset": null
+    },
+    {
+      "text": "or",
+      "position": {
+        "left": "947",
+        "top": "2649",
+        "width": "47",
+        "height": "27"
+      },
+      "offset": null
+    },
+    {
+      "text": "drawings",
+      "position": {
+        "left": "1023",
+        "top": "2636",
+        "width": "196",
+        "height": "42"
+      },
+      "offset": null
+    },
+    {
+      "text": "of",
+      "position": {
+        "left": "1252",
+        "top": "2632",
+        "width": "45",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "the",
+      "position": {
+        "left": "1328",
+        "top": "2631",
+        "width": "71",
+        "height": "35"
+      },
+      "offset": null
+    },
+    {
+      "text": "most",
+      "position": {
+        "left": "1426",
+        "top": "2632",
+        "width": "101",
+        "height": "34"
+      },
+      "offset": null
+    },
+    {
+      "text": "common",
+      "position": {
+        "left": "1556",
+        "top": "2637",
+        "width": "147",
+        "height": "27"
+      },
+      "offset": null
+    },
+    {
+      "text": "insects.",
+      "position": {
+        "left": "1733",
+        "top": "2626",
+        "width": "193",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "I",
+      "position": {
+        "left": "724",
+        "top": "2752",
+        "width": "16",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "leave",
+      "position": {
+        "left": "774",
+        "top": "2750",
+        "width": "122",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "it",
+      "position": {
+        "left": "920",
+        "top": "2727",
+        "width": "54",
+        "height": "53"
+      },
+      "offset": null
+    },
+    {
+      "text": "up",
+      "position": {
+        "left": "1003",
+        "top": "2751",
+        "width": "45",
+        "height": "35"
+      },
+      "offset": null
+    },
+    {
+      "text": "to",
+      "position": {
+        "left": "1078",
+        "top": "2742",
+        "width": "45",
+        "height": "33"
+      },
+      "offset": null
+    },
+    {
+      "text": "you!",
+      "position": {
+        "left": "1150",
+        "top": "2738",
+        "width": "151",
+        "height": "44"
+      },
+      "offset": null
+    },
+    {
+      "text": "to",
+      "position": {
+        "left": "1264",
+        "top": "2731",
+        "width": "45",
+        "height": "59"
+      },
+      "offset": null
+    },
+    {
+      "text": "organize",
+      "position": {
+        "left": "1330",
+        "top": "2735",
+        "width": "198",
+        "height": "44"
+      },
+      "offset": null
+    },
+    {
+      "text": "your",
+      "position": {
+        "left": "1555",
+        "top": "2742",
+        "width": "102",
+        "height": "35"
+      },
+      "offset": null
+    },
+    {
+      "text": "travel",
+      "position": {
+        "left": "1686",
+        "top": "2728",
+        "width": "141",
+        "height": "39"
+      },
+      "offset": null
+    },
+    {
+      "text": "from",
+      "position": {
+        "left": "1863",
+        "top": "2727",
+        "width": "97",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "the",
+      "position": {
+        "left": "1990",
+        "top": "2721",
+        "width": "72",
+        "height": "37"
+      },
+      "offset": null
+    },
+    {
+      "text": "States",
+      "position": {
+        "left": "723",
+        "top": "2805",
+        "width": "146",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "to",
+      "position": {
+        "left": "903",
+        "top": "2800",
+        "width": "44",
+        "height": "34"
+      },
+      "offset": null
+    },
+    {
+      "text": "Europe",
+      "position": {
+        "left": "979",
+        "top": "2795",
+        "width": "146",
+        "height": "42"
+      },
+      "offset": null
+    },
+    {
+      "text": "and",
+      "position": {
+        "left": "1157",
+        "top": "2789",
+        "width": "68",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "backwards.",
+      "position": {
+        "left": "1230",
+        "top": "2786",
+        "width": "269",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "We",
+      "position": {
+        "left": "1558",
+        "top": "2787",
+        "width": "48",
+        "height": "34"
+      },
+      "offset": null
+    },
+    {
+      "text": "may",
+      "position": {
+        "left": "1633",
+        "top": "2794",
+        "width": "75",
+        "height": "34"
+      },
+      "offset": null
+    },
+    {
+      "text": "organize",
+      "position": {
+        "left": "1735",
+        "top": "2779",
+        "width": "201",
+        "height": "48"
+      },
+      "offset": null
+    },
+    {
+      "text": "your",
+      "position": {
+        "left": "1962",
+        "top": "2782",
+        "width": "101",
+        "height": "38"
+      },
+      "offset": null
+    },
+    {
+      "text": "travel",
+      "position": {
+        "left": "726",
+        "top": "2853",
+        "width": "141",
+        "height": "43"
+      },
+      "offset": null
+    },
+    {
+      "text": "in",
+      "position": {
+        "left": "906",
+        "top": "2852",
+        "width": "44",
+        "height": "36"
+      },
+      "offset": null
+    },
+    {
+      "text": "Europe.",
+      "position": {
+        "left": "980",
+        "top": "2849",
+        "width": "165",
+        "height": "42"
+      },
+      "offset": null
+    },
+    {
+      "text": "PZ9SEO000T",
+      "position": {
+        "left": "2253",
+        "top": "2569",
+        "width": "76",
+        "height": "441"
+      },
+      "offset": null
+    }
+  ]
+}

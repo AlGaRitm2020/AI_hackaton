@@ -1,11 +1,19 @@
-def is_first(text):
+def is_main(text):
     splited = text.split()
-    if 'page' in splited:
-        if int(splited[splited.index('page') + 1]) > 1:
-            return False
-    return True
+    if 'стр' in splited or 'страница' in splited:
+        try:
+
+            if int(splited[splited.index('стр') + 1]) > 1:
+                return 'other'
+            elif int(splited[splited.index('страница') + 1]) > 1:
+                return 'other'
+            else:
+                return 'main'
+        except ValueError:
+            pass
+    return 'main'
 
 
 if __name__ == '__main__':
-    text = 'page '
-    print(is_first(text))
+    text = 'страница 5'
+    print(is_main(text))

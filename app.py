@@ -14,19 +14,15 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
-
-
 @app.route('/text_extraction', methods=['GET', 'POST'])
 def text_extraction():
     if request.method == 'POST':
         if 'file1' not in request.files:
             return 'there is no file1 in form!'
 
-
         img = request.files['file1']
         path = os.path.join(app.config['UPLOAD_FOLDER'], img.filename)
         img.save(path)
-
 
         func_for_vision_words_with_coord(os.path.join(path))
 
@@ -82,6 +78,7 @@ def classification():
         return dict, 201
     return render_template('3_classification.html')
 
+
 @app.route('/get_labels', methods=['GET', 'POST'])
 def get_labels():
     if request.method == 'POST':
@@ -99,7 +96,6 @@ def get_labels():
         #     json.dump(dict, f)
         return dict, 201
     return render_template('4_get_labels.html')
-
 
 
 if __name__ == '__main__':

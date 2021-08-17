@@ -1,15 +1,34 @@
 import spacy
-
+# def add_facts(ent, )
 texty = 'Еду в Санкт-Петербург Яндекс через 1892г 2010г. 1900 г Москву, 1004678765 рублей 13.05.2003 Алексей 12 августа года Ижевску ООО "Яндекс" 10000$ 1734г Кононов Никита Владимирович мама папа Китай Пекин МТС и директор Абу-Даби Хельсинки'
 nlp = spacy.load("ru_core_news_sm")
 doc = nlp(texty)
 print(doc.text)
+response = {'facts': None}
 for ent in doc.ents:
     if ent.label_ == 'ORG':
+        dict = {}
+        dict['text'] = ent.text
+        dict['tag'] = 'ORGANIZATION'
+        dict['tokens'] = []
+        offset = 0
+        for elem in ent.text.split():
+            token = {
+                'text' : elem,
+                'offset' : offset
+            }
+            offset += len(elem) + 1
+            dict['tokens'].append(token)
         print(ent.text, ': ORGANIZATION')
     if ent.label_ == 'LOC':
+        dict = {}
+        dict['text'] = ent.text
+        dict['tag'] = 'LOCATION'
         print(ent.text, ': LOCATION')
     if ent.label_ == 'PER':
+        dict = {}
+        dict['text'] = ent.text
+        dict['tag'] = 'PERSON'
         print(ent.text, ': PERSON')
 
 ch = ['01', '02', '03', '04', '05', '06', '07', '08', '09']

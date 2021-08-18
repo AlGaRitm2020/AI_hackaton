@@ -4,9 +4,9 @@ import uuid
 
 from flask import Flask, request, render_template
 
-# from img_to_text import img_to_text
-# from is_first import is_main
-# from technologies_vision_words import func_for_vision_words_with_coord, img_size
+from img_to_text import img_to_text
+from is_first import is_main
+from technologies_vision_words import func_for_vision_words_with_coord, img_size
 from spacy_completed import get_labels_dict
 
 UPLOAD_FOLDER = './upload'

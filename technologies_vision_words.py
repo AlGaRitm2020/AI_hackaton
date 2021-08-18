@@ -72,5 +72,6 @@ def rus_func(img): # функция для обработки русского �
                 mass.append(i)
         return ' '.join(mass)
 
-func_for_vision_words_with_coord('rus-doc2.tif')
+if __name__ == '__main__':
+    func_for_vision_words_with_coord('aah97e00-page02_1.tif')
 

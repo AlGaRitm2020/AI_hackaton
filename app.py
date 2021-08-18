@@ -80,9 +80,25 @@ def get_labels():
         text = request.form.get('text1')
         response = get_labels_dict(text)
 
-        return f"""Response: {response}""", 201
+        return f"""{response}""", 201
     return render_template('4_get_labels.html')
 
+# @app.route('/piplene', methods=['GET', 'POST'])
+# def text_extraction():
+#     if request.method == 'POST':
+#         if 'file1' not in request.files:
+#             return 'there is no file1 in form!'
+#
+#         img = request.files['file1']
+#         path = os.path.join(app.config['UPLOAD_FOLDER'], img.filename)
+#         img.save(path)
+#
+#         func_for_vision_words_with_coord(os.path.join(path))
+#
+#         with open('data/data_1.json', 'r') as f:
+#             return json.load(f), 201
+#
+#     return render_template('1_text_extraction.html')
 
 if __name__ == '__main__':
     app.run()

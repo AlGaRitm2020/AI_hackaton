@@ -2,38 +2,34 @@ import pytesseract
 from PIL import Image
 import json
 
-
-def func_for_vision_words_with_coord(img):  # функция для обработкии изображения
+def func_for_vision_words_with_coord(img): # функция для обработкии изображения
     # импорт библиотеки
     pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
     # открытие изображения
     image = Image.open(img)
 
-    # распознание текста на изображении и удаление \n и \n\n
-    text_from_vision = pytesseract.image_to_string(image).strip()
-    text_from_vision = text_from_vision.replace('\n\n', '\n')
-    text_from_vision_with_enter = text_from_vision.replace('\n\n', '\n')
-    text_from_vision = text_from_vision.replace('\n', ' ')
+    # обработка текста на русском языке
+    text_from_vision = rus_func(img)
     # информация о каждом слове и его характеристики
-    text_data = pytesseract.image_to_data(img)
-    print(text_from_vision)
+    text_data = pytesseract.image_to_data(img, lang='rus')
+
     # начальный словарь
     dict = {
         'text': text_from_vision,
         'tokens': [],
-        'source': {
+        'source':{
             'width': img_size(img)[0],
-            'height': img_size(img)[1]
+            'height':img_size(img)[1]
         }
     }
+
 
     text_full = []
     # анализ каждого слова в тексте
     for i, s in enumerate(text_data.split('\n')[1:]):
         list_elems = s.split('\t')
         text_full.append(list_elems[-1])
-        # отдельный строчки текста
-        elems_text_from_vision = text_from_vision_with_enter.split('\n')
+
 
         # если все характеристики слова существуют
         if len(list_elems) == 12:
@@ -47,16 +43,34 @@ def func_for_vision_words_with_coord(img):  # функция для обрабо
                         'width': list_elems[8],
                         'height': list_elems[9]
                     },
-                    'offset': [j for j in elems_text_from_vision if list_elems[-1] in j][0].find(list_elems[-1])
+                    'offset': text_from_vision.find(list_elems[-1])
 
                 }
                 dict['tokens'].append(dict_tokens)
     # запись в json файл
 
-    with open('data/data_1.json', 'w') as f:
+    with open('data_1.json', 'w') as f:
         json.dump(dict, f)
 
 
-def img_size(img):  # размер изображения
+
+def img_size(img): # размер изображения
     im = Image.open(img)
     return im.size
+
+def rus_func(img): # функция для обработки русского языка
+    pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    text = pytesseract.image_to_string(img, lang="rus")
+    with open('text_from_image3.txt', 'a', encoding='utf-8') as f:
+        f.write(text.strip())
+
+    with open('text_from_image3.txt', encoding='utf-8') as f:
+        f = f.read()
+        mass = []
+        for i in f.split('\n'):
+            if i not in ['  ', ' ', '']:
+                mass.append(i)
+        return ' '.join(mass)
+
+func_for_vision_words_with_coord('rus-doc2.tif')
+

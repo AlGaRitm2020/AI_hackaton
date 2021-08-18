@@ -1,6 +1,8 @@
 import spacy
+from langdetect import detect
 # def add_facts(ent, )
 texty = 'Еду в Санкт-Петербург Яндекс через 1892г 2010г. 1900 г Москву, 1004678765 рублей 13.05.2003 Алексей 12 августа года Ижевску ООО "Яндекс" 10000$ 1734г Кононов Никита Владимирович мама папа Китай Пекин МТС и директор Абу-Даби Хельсинки'
+print(detect(texty))
 nlp = spacy.load("ru_core_news_sm")
 doc = nlp(texty)
 print(doc.text)

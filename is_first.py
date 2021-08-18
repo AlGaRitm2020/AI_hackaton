@@ -1,8 +1,9 @@
 from keywords import KeyWords
+from logotypes import is_logo
 from spacy_completed import get_labels_dict
 
 
-def is_main(text):
+def is_main(text, img):
     splited = text.lower().split()
 
     for key in KeyWords.pages:
@@ -14,6 +15,8 @@ def is_main(text):
                     return 'main'
             except ValueError:
                 pass
+    if is_logo(img):
+        return 'main'
 
     labels_set = set([fact['tag'] for fact in get_labels_dict(text)['facts']])
 

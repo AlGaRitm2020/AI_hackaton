@@ -68,7 +68,7 @@ def classification():
         width, height = img_size(path)
         dict = {'width': width,
                 'height': height,
-                'type': is_main(text)}
+                'type': is_main(text, path)}
 
         return dict, 201
     return render_template('3_classification.html')

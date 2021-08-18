@@ -2,14 +2,15 @@ import pytesseract
 from PIL import Image
 import json
 
-def func_for_vision_words_with_coord(img): # функция для обработкии изображения
+
+def func_for_vision_words_with_coord(img):  # функция для обработкии изображения
     # импорт библиотеки
     pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
     # открытие изображения
     image = Image.open(img)
 
     # распознание текста на изображении и удаление \n и \n\n
-    text_from_vision = pytesseract.image_to_string(image, lang="eng").strip()
+    text_from_vision = pytesseract.image_to_string(image).strip()
     text_from_vision = text_from_vision.replace('\n\n', '\n')
     text_from_vision_with_enter = text_from_vision.replace('\n\n', '\n')
     text_from_vision = text_from_vision.replace('\n', ' ')
@@ -20,12 +21,11 @@ def func_for_vision_words_with_coord(img): # функция для обрабо�
     dict = {
         'text': text_from_vision,
         'tokens': [],
-        'source':{
+        'source': {
             'width': img_size(img)[0],
-            'height':img_size(img)[1]
+            'height': img_size(img)[1]
         }
     }
-
 
     text_full = []
     # анализ каждого слова в тексте
@@ -57,9 +57,6 @@ def func_for_vision_words_with_coord(img): # функция для обрабо�
         json.dump(dict, f)
 
 
-def img_size(img): # размер изображения
+def img_size(img):  # размер изображения
     im = Image.open(img)
     return im.size
-
-
-

@@ -1,6 +1,5 @@
 import json
 import os
-import uuid
 
 from flask import Flask, request, render_template
 
@@ -27,8 +26,7 @@ def text_extraction():
 
         func_for_vision_words_with_coord(os.path.join(path))
 
-        # import json
-        with open('data/data.json', 'r') as f:
+        with open('data/data_1.json', 'r') as f:
             return json.load(f), 201
 
     return render_template('1_text_extraction.html')
@@ -42,7 +40,6 @@ def search_logo():
         images = request.files.getlist("pictures")
         if images:
             for img in images:
-                # Create Images
                 file_name = img.filename
                 image_file = os.path.join(app.config['UPLOAD_FOLDER'], file_name)
                 img.save(image_file)
@@ -54,9 +51,6 @@ def search_logo():
         text = 'get from function by snchs'
         dict = {'text': text}
 
-        # import json
-        # with open('text.json', 'w') as f:
-        #     json.dump(dict, f)
         return dict, 201
     return render_template('2_search_logo.html')
 

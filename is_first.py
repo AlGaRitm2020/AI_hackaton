@@ -17,7 +17,7 @@ def is_main(text):
 
     labels_set = set([fact['tag'] for fact in get_labels_dict(text)['facts']])
 
-
+    print(labels_set)
     if KeyWords.compulsory_labels <= labels_set:
         return 'main'
     else:

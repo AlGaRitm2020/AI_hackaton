@@ -1,4 +1,4 @@
-from pprint import pprint
+#from print import p#print
 
 import spacy
 
@@ -23,7 +23,7 @@ def add_loc_org_and_person(ent, name):
 
 
 def add_date_or_money(*data, name='DATE'):
-    print(data)
+    #print(data)
     dict = {}
     dict['text'] = ' '.join(data)
     dict['tag'] = name
@@ -42,7 +42,7 @@ def add_date_or_money(*data, name='DATE'):
 def get_labels_dict(text):
     nlp = spacy.load("ru_core_news_sm")
     doc = nlp(text)
-    print(doc.text)
+    #print(doc.text)
     response = {'facts': []}
     for ent in doc.ents:
         if ent.label_ == 'ORG':
@@ -58,43 +58,43 @@ def get_labels_dict(text):
     ch += [str(i) for i in range(1, 32)]
     ch += [str(i) for i in range(1500, 2050)]
 
-    for i in range(len(text.split())):
+    for i in range(len(text.split()) -1):
         if check_stems(get_stems(text.split()[i]), KeyWords.months):
-            print('TEXT SPLIT ', text.split()[i])
+            # #print('TEXT SPLIT ', text.split()[i])
             if text.split()[i - 1] in ch:
                 if text.split()[i + 1] in ch:
                     dict = add_date_or_money(text.split()[i - 1], text.split()[i],
                                              text.split()[i + 1])
                     response['facts'].append(dict)
-                    print(text.split()[i - 1], text.split()[i], text.split()[i + 1], ': DATE')
+                    #print(text.split()[i - 1], text.split()[i], text.split()[i + 1], ': DATE')
                 else:
-                    print(text.split()[i - 1], text.split()[i], ': DATE')
+                    #print(text.split()[i - 1], text.split()[i], ': DATE')
                     dict = add_date_or_money(text.split()[i - 1], text.split()[i])
                     response['facts'].append(dict)
             elif text.split()[i + 1] in ch:
-                print(text.split()[i], text.split()[i + 1], ': DATE')
+                #print(text.split()[i], text.split()[i + 1], ': DATE')
                 dict = add_date_or_money(text.split()[i], text.split()[i + 1])
                 response['facts'].append(dict)
             else:
-                print(text.split()[i], ': DATE')
+                #print(text.split()[i], ': DATE')
                 dict = add_date_or_money(text.split()[i])
                 response['facts'].append(dict)
 
-    for i in range(len(text.split())):
+    for i in range(len(text.split()) - 1):
         if text.split()[i] in ch:
             if check_stems(get_stems(text.split()[i + 1]), KeyWords.years):
-                print(text.split()[i], text.split()[i + 1], ': DATE', )
+                #print(text.split()[i], text.split()[i + 1], ': DATE', )
                 dict = add_date_or_money(text.split()[i], text.split()[i + 1])
                 response['facts'].append(dict)
     for i in range(len(text.split())):
         if str(text.split()[i][:-1:]) in ch:
             if text.split()[i][-1] == 'г':
-                print(text.split()[i], ': DATE')
+                #print(text.split()[i], ': DATE')
                 dict = add_date_or_money(text.split()[i])
                 response['facts'].append(dict)
         if str(text.split()[i][:-2:]) in ch:
             if text.split()[i][-2::] == 'г.':
-                print(text.split()[i], ': DATE')
+                #print(text.split()[i], ': DATE')
                 dict = add_date_or_money(text.split()[i])
                 response['facts'].append(dict)
     flag = 0
@@ -108,34 +108,34 @@ def get_labels_dict(text):
                 if str(text.split()[i])[-2] == 'г':
                     if str(text.split()[i].split('.')[0]) in ch and str(
                             text.split()[i].split('.')[1]) in ch:
-                        print(text.split()[i][:-1], ': DATE')
+                        #print(text.split()[i][:-1], ': DATE')
                         dict = add_date_or_money(text.split()[i][:-1])
                         response['facts'].append(dict)
                 else:
                     if str(text.split()[i].split('.')[0]) in ch and str(
                             text.split()[i].split('.')[1]) in ch:
-                        print(text.split()[i], ': DATE')
+                        #print(text.split()[i], ': DATE')
                         dict = add_date_or_money(text.split()[i])
                         response['facts'].append(dict)
             if (text.split()[i]).count('.') == 2:
                 if str(text.split()[i][-1]) == 'г':
                     if str(text.split()[i].split('.')[0]) in ch and str(
                             text.split()[i].split('.')[1]) in ch:
-                        print(text.split()[i], ': DATE')
+                        #print(text.split()[i], ': DATE')
                         dict = add_date_or_money(text.split()[i])
                         response['facts'].append(dict)
                 else:
                     if str(text.split()[i].split('.')[0]) in ch and str(
                             text.split()[i].split('.')[1]) in ch:
-                        print(text.split()[i], ': DATE')
+                        #print(text.split()[i], ': DATE')
                         dict = add_date_or_money(text.split()[i])
                         response['facts'].append(dict)
 
-    for i in range(len(text.split())):
+    for i in range(len(text.split()) - 1):
         if (text.split()[i]).isdigit():
             if check_stems(get_stems(text.split()[i + 1]), KeyWords.money):
 
-                print(text.split()[i], text.split()[i + 1], ': MONEY')
+                #print(text.split()[i], text.split()[i + 1], ': MONEY')
                 dict = add_date_or_money(text.split()[i], text.split()[i + 1], name='MONEY')
                 response['facts'].append(dict)
 
@@ -144,4 +144,4 @@ def get_labels_dict(text):
 
 if __name__ == '__main__':
     text = 'Еду в Санкт-Петербург Яндекс через 1892г 2010г. 1900 г Москву, 1004678765 рублей 13.05.2003г. Алексей 12 августа года Ижевску ООО "Яндекс" 10000$ 1734г Кононов Никита Владимирович мама папа Китай Пекин МТС и директор Абу-Даби Хельсинки'
-    print(get_labels_dict(text))
+    #print(get_labels_dict(text))

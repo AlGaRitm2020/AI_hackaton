@@ -4,9 +4,10 @@ import uuid
 
 from flask import Flask, request, render_template
 
-from img_to_text import img_to_text
-from is_first import is_main
-from technologies_vision_words import func_for_vision_words_with_coord, img_size
+# from img_to_text import img_to_text
+# from is_first import is_main
+# from technologies_vision_words import func_for_vision_words_with_coord, img_size
+from spacy_completed import get_labels_dict
 
 UPLOAD_FOLDER = './upload'
 
@@ -82,19 +83,10 @@ def classification():
 @app.route('/get_labels', methods=['GET', 'POST'])
 def get_labels():
     if request.method == 'POST':
-        if 'img' not in request.files:
-            return 'there is no file1 in form!'
-        img = request.files['img']
-        path = os.path.join(app.config['UPLOAD_FOLDER'], img.filename)
-        img.save(path)
+        text = request.form.get('text1')
+        response = get_labels_dict(text)
 
-        text = 'get from function by snchs'
-        dict = {'text': text}
-
-        # import json
-        # with open('text.json', 'w') as f:
-        #     json.dump(dict, f)
-        return dict, 201
+        return f"""Response: {response}""", 201
     return render_template('4_get_labels.html')
 
 

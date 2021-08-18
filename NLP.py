@@ -17,11 +17,11 @@ def get_stems(message: str) -> list:
     return word_list
 
 
-def check_stems(stems: str, key_words: list) -> bool:
+def check_stems(stems: list, key_words: list) -> bool:
     for word in stems:
         if word in key_words:
             return True
 
 
 if __name__ == '__main__':
-    print(set(get_stems(' '.join(KeyWords.years))))
+    print(set(get_stems(' '.join(KeyWords.money))))

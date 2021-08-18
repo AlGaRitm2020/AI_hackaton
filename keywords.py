@@ -4,5 +4,6 @@ class KeyWords:
     pages = ['стр', 'страница']
     compulsory_labels = {'LOCATION', 'PERSON', 'DATE', 'ORGANIZATION'}
     years = ['г.', 'год', 'г']
+    money = ['евр', 'доллар', 'руб', 'рубл', 'р', 'р.']
 
 

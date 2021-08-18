@@ -53,8 +53,8 @@ def get_labels_dict(text):
         if ent.label_ == 'PER':
             response['facts'].append(add_loc_org_and_person(ent, 'PERSON'))
 
-    ch = ['01', '02', '03', '04', '05', '06', '07', '08', '09']
 
+    ch = ['0' + str(i) for i in range(1, 10)]
     ch += [str(i) for i in range(1, 32)]
     ch += [str(i) for i in range(1500, 2050)]
 
@@ -133,9 +133,8 @@ def get_labels_dict(text):
 
     for i in range(len(text.split())):
         if (text.split()[i]).isdigit():
-            if str(text.split()[i + 1]) in ['рублей', 'руб.', 'руб', 'рублей.', 'долларов', '$',
-                                            'р.',
-                                            'р', 'евро', 'евро.']:
+            if check_stems(get_stems(text.split()[i + 1]), KeyWords.money):
+
                 print(text.split()[i], text.split()[i + 1], ': MONEY')
                 dict = add_date_or_money(text.split()[i], text.split()[i + 1], name='MONEY')
                 response['facts'].append(dict)

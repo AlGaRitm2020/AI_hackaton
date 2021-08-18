@@ -1,18 +1,22 @@
 import pytesseract
 from PIL import Image
+import json
 
-
-def func_for_vision_words_with_coord(img):
+def func_for_vision_words_with_coord(img): # функция для обработкии изображения
+    # импорт библиотеки
     pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-    text_data = pytesseract.image_to_data(Image.open(img))
-
+    # открытие изображения
     image = Image.open(img)
 
+    # распознание текста на изображении и удаление \n и \n\n
     text_from_vision = pytesseract.image_to_string(image, lang="eng").strip()
+    text_from_vision = text_from_vision.replace('\n\n', '\n')
     text_from_vision_with_enter = text_from_vision.replace('\n\n', '\n')
     text_from_vision = text_from_vision.replace('\n', ' ')
+    # информация о каждом слове и его характеристики
+    text_data = pytesseract.image_to_data(img)
 
-
+    # начальный словарь
     dict = {
         'text': text_from_vision,
         'tokens': [],
@@ -23,26 +27,18 @@ def func_for_vision_words_with_coord(img):
     }
 
 
+    text_full = []
+    # анализ каждого слова в тексте
     for i, s in enumerate(text_data.split('\n')[1:]):
         list_elems = s.split('\t')
-        # предложения - отдельно
+        text_full.append(list_elems[-1])
+        # отдельный строчки текста
         elems_text_from_vision = text_from_vision_with_enter.split('\n')
 
-        # offset = 0
-        #
-        # for number_string, string in reversed(list(enumerate(elems_text_from_vision))):
-        #     if list_elems[-1] in string:
-        #         offset = string
-        #         del elems_text_from_vision[number_string]
-
-
-
-
-
-
+        # если все характеристики слова существуют
         if len(list_elems) == 12:
             if list_elems[-1] != '' and list_elems[-1] != ' ':
-
+                # наполнение списка tokens для кадого слова
                 dict_tokens = {
                     'text': list_elems[-1],
                     'position': {
@@ -55,33 +51,15 @@ def func_for_vision_words_with_coord(img):
 
                 }
                 dict['tokens'].append(dict_tokens)
+    # запись в json файл
 
-
-
-
-
-    import json
-    with open('data/data_1.json', 'w') as f:
+    with open('data_1.json', 'w') as f:
         json.dump(dict, f)
 
 
-def main_page(name_file):
-    if '_' in name_file.split('/')[-1]:
-        list_name_file = name_file.split('_')
-        number = list_name_file[-1].split('.')[0]
-        if number == '1':
-            return True
-        return False
-    return True
-
-
-def img_size(img):
-    from PIL import Image
+def img_size(img): # размер изображения
     im = Image.open(img)
-    (width, height) = im.size
-    return (width, height)
+    return im.size
 
 
-# func_for_vision_words_with_coord('source/aah97e00-page02_1.tif')
-#
-# print(img_size('source/aah97e00-page02_1.tif'))
+

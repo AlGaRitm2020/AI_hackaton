@@ -15,7 +15,7 @@ def func_for_vision_words_with_coord(img): # функция для обрабо�
     text_from_vision = text_from_vision.replace('\n', ' ')
     # информация о каждом слове и его характеристики
     text_data = pytesseract.image_to_data(img)
-
+    print(text_from_vision)
     # начальный словарь
     dict = {
         'text': text_from_vision,
@@ -53,7 +53,7 @@ def func_for_vision_words_with_coord(img): # функция для обрабо�
                 dict['tokens'].append(dict_tokens)
     # запись в json файл
 
-    with open('data_1.json', 'w') as f:
+    with open('data/data_1.json', 'w') as f:
         json.dump(dict, f)
 
 

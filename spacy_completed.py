@@ -2,6 +2,9 @@ from pprint import pprint
 
 import spacy
 
+from NLP import check_stems, get_stems
+from keywords import KeyWords
+
 
 def add_loc_org_and_person(ent, name):
     dict = {}
@@ -55,16 +58,9 @@ def get_labels_dict(text):
     ch += [str(i) for i in range(1, 32)]
     ch += [str(i) for i in range(1500, 2050)]
 
-    date = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь',
-            'октябрь', 'ноябрь', 'декабрь', 'января', 'январю', 'январем', 'февраля', 'февралю',
-            'февралем', 'марта', 'марту', 'мартом', 'апреля', 'апрелю', 'апрелем', 'мая', 'маю',
-            'маем',
-            'июня', 'июню', 'июнем', 'июля', 'июлем', 'июлю', 'августа', 'августу', 'августом',
-            'сентября', 'сентябрю', 'сентябрем', 'октября', 'октябрю', 'октябрем', 'ноября',
-            'ноябрю',
-            'ноябрем', 'декабря', 'декабрю', 'декабрем']
     for i in range(len(text.split())):
-        if text.split()[i] in date:
+        if check_stems(get_stems(text.split()[i]), KeyWords.months):
+            print('TEXT SPLIT ', text.split()[i])
             if text.split()[i - 1] in ch:
                 if text.split()[i + 1] in ch:
                     dict = add_date_or_money(text.split()[i - 1], text.split()[i],
@@ -86,7 +82,7 @@ def get_labels_dict(text):
 
     for i in range(len(text.split())):
         if text.split()[i] in ch:
-            if text.split()[i + 1] in ['г.', 'год', 'года', 'году', 'г', 'год.', 'года.', 'году.']:
+            if check_stems(get_stems(text.split()[i + 1]), KeyWords.years):
                 print(text.split()[i], text.split()[i + 1], ': DATE', )
                 dict = add_date_or_money(text.split()[i], text.split()[i + 1])
                 response['facts'].append(dict)

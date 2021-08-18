@@ -28,7 +28,7 @@ def text_extraction():
         func_for_vision_words_with_coord(os.path.join(path))
 
         # import json
-        with open('data.json', 'r') as f:
+        with open('data/data.json', 'r') as f:
             return json.load(f), 201
 
     return render_template('1_text_extraction.html')

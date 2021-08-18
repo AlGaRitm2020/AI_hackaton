@@ -1,10 +1,11 @@
+from keywords import KeyWords
 from spacy_completed import get_labels_dict
 
 
 def is_main(text):
     splited = text.lower().split()
-    keywords = ['стр', 'страница']
-    for key in keywords:
+
+    for key in KeyWords.pages:
         if key in splited:
             try:
                 if int(splited[splited.index(key) + 1]) > 1:
@@ -15,9 +16,9 @@ def is_main(text):
                 pass
 
     labels_set = set([fact['tag'] for fact in get_labels_dict(text)['facts']])
-    compulsory_labels = {'LOCATION', 'PERSON', 'DATE', 'ORGANIZATION'}
 
-    if compulsory_labels <= labels_set:
+
+    if KeyWords.compulsory_labels <= labels_set:
         return 'main'
     else:
         return 'other'

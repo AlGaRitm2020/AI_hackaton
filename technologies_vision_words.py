@@ -61,7 +61,7 @@ def func_for_vision_words_with_coord(img):
 
 
     import json
-    with open('data_1.json', 'w') as f:
+    with open('data/data_1.json', 'w') as f:
         json.dump(dict, f)
 
 
